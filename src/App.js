@@ -1,50 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import faker from "faker";
+import Componentdetail from "./componentdetail";
 
 
 const App = () => {
- return(
- <div className="ui container components ">
- <div className="component">
- <a href="#" className="avatar">
- <img src="" alt="reddy" />
- </a>
- <div className="metadata"><span className="date">Today at 6:00pm</span></div>
- <a href="" className="author">
- <div claasName="Name"> Nagi </div>
- </a>
- <div className="text">Nice blog spot!
- </div>
- </div>
+  return (
+    <div className = "ui container components " >
 
- <div className="component">
- <a href="#" className="avatar">
- <img src="" alt="reddy" />
- </a>
- <div className="metadata"><span className="date">Today at 6:00pm</span></div>
- <a href="" className="author">
- <div claasName="Name"> Nagi </div>
- </a>
- <div className="text">Nice blog spot!
- </div>
- </div>
- <div className="component">
- <a href="#" className="avatar">
- <img src="" alt="reddy" />
- </a>
- <div className="metadata"><span className="date">Today at 6:00pm</span></div>
- <a href="" className="author">
- <div claasName="Name"> Nagi </div>
- </a>
- <div className="text">Nice blog spot!
- </div>
- </div>
- 
- 
-  </div>
-  
- );
+    <Componentdetail 
+    author = "sam"
+    date = "on 28.03"
+    text = "hi" / >
+    <Componentdetail 
+    author = "sob"
+    date = "on 27.03"
+    text = "hiee" / >
+    <Componentdetail 
+    author = "nag"
+    date = "on 25.03"
+    text = "hieeee" / >
+    <Componentdetail 
+    author = "red"
+    date = "on 24.03"
+    text = "hieeeeee" / >
+    
+    </div>
+
+  );
 }
-
-ReactDOM.render(<App/>,document.getElementById("root"));
 export default App;
+ReactDOM.render( < App / > , document.getElementById("root"));
